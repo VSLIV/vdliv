@@ -1,0 +1,87 @@
+body {
+	padding: 0;
+	margin: 0;
+	display: grid;
+	background: #1d1d1d;
+	color: #fff;
+	text-align: center;
+	font-family: Jost;
+	justify-content: center;
+}
+
+.photo-bg {
+  content: '';
+  left: 0; 
+  right: 0; 
+  top: 0; 
+  bottom: 0; 
+  z-index: 1; 
+   /* Путь к картинке */
+  position: fixed;
+  filter: blur(15px) brightness(40%); /* Размытие картинки */
+  background-image: url(VSLIV.png);
+  height: 480px;
+}
+
+.img-blur{
+  display: grid;
+  text-align: center;
+  z-index: 0;
+  position: fixed;
+}
+
+.blur {
+	backdrop-filter: blur(10px);
+	backdrop-filter: brightness(60%);
+}
+
+.text {
+	margin-top: -15px;
+	padding: 0px;
+}
+
+.VA {
+	width: auto;
+	height: 150px;
+	border-radius: 300%;
+}
+
+hr {
+	border-color: #065535;
+	max-width: 70%;
+	min-width: 50%;
+	margin-top: -5px;
+}
+
+.text-body {
+	margin-top: 0px;
+	padding: 0px;
+}
+
+button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 8px;
+  padding: 10px 24px;
+}
+
+.button-body {
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+  	justify-content: center;
+}
+
+.head {
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
